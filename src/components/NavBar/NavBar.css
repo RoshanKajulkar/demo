@@ -1,0 +1,133 @@
+.offer{
+    background-color: rgb(37,37,37);
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.text{
+    margin: 0px;
+    color: rgb(255, 254, 242, 0.95);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.plus{
+    width: 15px;
+    height: 15px;
+}
+
+.option{
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    transition: border 1s ease; 
+    border-bottom: 1px solid rgb(255, 255, 255, 0);
+}
+
+.option:hover{
+    border-bottom: 1px solid rgb(255, 255, 255, 1);
+}
+
+@media (max-width: 1024px) {
+    .option{
+        width: 90%;
+    }
+
+    .text{
+        margin-right: 40px;
+    }
+
+    .offer{
+        height: 55px;    
+    }
+}
+
+.Nav{
+    width: 100%;
+}
+
+/* main nav body */
+
+.body{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 0px;
+}
+
+.menu{
+    margin: 15px 15px;
+    font-size: 14px;
+    transition: border 1s ease; 
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.menu:hover{
+    border-bottom: 1px solid rgb(0, 0, 0, 1);
+}
+
+
+@media (max-width: 425px) {
+    .left-menu{
+        display: none;
+    }
+
+    .right-menu{
+        display: none;
+    }
+
+    .left-company-name{
+        display: flex;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .left-company-name > .menu {
+        font-size: 30px;
+        margin: 5px 5px;
+    }
+
+    .right-company-name{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+        margin-right: 20px;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 426px) {
+    
+    .left-menu{
+        display: flex;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .right-menu{
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .left-company-name{
+       display: none;
+    }
+
+    .right-company-name{
+        display: none;
+    }
+}

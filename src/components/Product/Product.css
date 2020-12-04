@@ -1,0 +1,75 @@
+.main-body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url("../../assets/oil.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+}
+
+.Product-description{
+    width: 366px;
+    margin-right: 97px;
+}
+
+
+@media (max-width : 426px){
+    
+    .company-name{
+        display: none;
+    }
+}
+
+@media (max-width : 1250px){
+    .Product-description{
+        display: none;
+    }
+}
+
+@media (max-width : 1440px){
+    
+    .company-name{
+        padding-left: 40px;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 0px;
+    }
+
+    .location > p{
+        margin-top: 0px;
+    }
+
+    .location > h1{
+        font-weight: 100;
+    }
+
+    .info > p{
+        border-bottom: 2px solid black;
+        padding-bottom: 30px;
+    }
+
+    .sub-info-heading {
+        font-weight: bold;
+    }
+
+    .sub-info{
+        padding-bottom: 3px;
+        border-bottom: 1px solid gray;
+    }
+
+    .btn{
+        width: 100%;
+        height: 60px;
+        font-size: medium;
+        font-weight: 200;
+        background-color: #333333;
+        color: white;
+        border: 0px;
+        outline: none;
+        cursor: pointer;
+    }
+
+
+}
